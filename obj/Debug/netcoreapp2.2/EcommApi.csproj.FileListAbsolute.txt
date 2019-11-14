@@ -1,0 +1,14 @@
+C:\Users\Ahmed Mousa\Desktop\DotNetCore\EcommApi\bin\Debug\netcoreapp2.2\EcommApi.deps.json
+C:\Users\Ahmed Mousa\Desktop\DotNetCore\EcommApi\bin\Debug\netcoreapp2.2\EcommApi.runtimeconfig.json
+C:\Users\Ahmed Mousa\Desktop\DotNetCore\EcommApi\bin\Debug\netcoreapp2.2\EcommApi.runtimeconfig.dev.json
+C:\Users\Ahmed Mousa\Desktop\DotNetCore\EcommApi\bin\Debug\netcoreapp2.2\EcommApi.dll
+C:\Users\Ahmed Mousa\Desktop\DotNetCore\EcommApi\bin\Debug\netcoreapp2.2\EcommApi.pdb
+C:\Users\Ahmed Mousa\Desktop\DotNetCore\EcommApi\obj\Debug\netcoreapp2.2\EcommApi.csprojAssemblyReference.cache
+C:\Users\Ahmed Mousa\Desktop\DotNetCore\EcommApi\obj\Debug\netcoreapp2.2\EcommApi.csproj.CoreCompileInputs.cache
+C:\Users\Ahmed Mousa\Desktop\DotNetCore\EcommApi\obj\Debug\netcoreapp2.2\EcommApi.RazorAssemblyInfo.cache
+C:\Users\Ahmed Mousa\Desktop\DotNetCore\EcommApi\obj\Debug\netcoreapp2.2\EcommApi.RazorAssemblyInfo.cs
+C:\Users\Ahmed Mousa\Desktop\DotNetCore\EcommApi\obj\Debug\netcoreapp2.2\EcommApi.AssemblyInfoInputs.cache
+C:\Users\Ahmed Mousa\Desktop\DotNetCore\EcommApi\obj\Debug\netcoreapp2.2\EcommApi.AssemblyInfo.cs
+C:\Users\Ahmed Mousa\Desktop\DotNetCore\EcommApi\obj\Debug\netcoreapp2.2\EcommApi.RazorTargetAssemblyInfo.cache
+C:\Users\Ahmed Mousa\Desktop\DotNetCore\EcommApi\obj\Debug\netcoreapp2.2\EcommApi.dll
+C:\Users\Ahmed Mousa\Desktop\DotNetCore\EcommApi\obj\Debug\netcoreapp2.2\EcommApi.pdb
