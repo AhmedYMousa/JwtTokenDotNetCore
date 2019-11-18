@@ -1,4 +1,5 @@
 using EcommApi.Models;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -9,10 +10,12 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 
+
 namespace EcommApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("AllowMyOrigin")]
     public class UsersController : ControllerBase
     {
         private readonly AppDbContext context;
@@ -58,7 +61,7 @@ namespace EcommApi.Controllers
                 return BadRequest();
             }
         }
-        
+
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
@@ -77,9 +80,9 @@ namespace EcommApi.Controllers
 
         [HttpPost]
         [Route("token")]
-        public string GetToken(LoginViewModel login)
+        public JsonResult GetToken(LoginViewModel login)
         {
-            var user = context.Users.SingleOrDefault(x => x.Email == login.Email && x.Password == login.Password);
+            var user = context.Users.SingleOrDefault(x => x.Email == login.email && x.Password == login.password);
             if (user != null)
             {
                 var key = Encoding.UTF8.GetBytes(Configuration["AppSettings:JWT_Key"].ToString());
@@ -98,7 +101,7 @@ namespace EcommApi.Controllers
                 var securityToken = tokenHandler.CreateToken(tokenDescriptor);
                 var token = tokenHandler.WriteToken(securityToken);
 
-                return "{token:" + token + "}";
+                return new JsonResult(token);
             }
             else
             {

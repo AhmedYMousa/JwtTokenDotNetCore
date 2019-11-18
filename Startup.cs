@@ -24,12 +24,7 @@ namespace EcommApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc()
-                .AddJsonOptions(
-                opt =>
-                {
-                    opt.UseCamelCasing(true);
-                }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddDbContext<AppDbContext>(options =>
             {
@@ -40,7 +35,7 @@ namespace EcommApi
                 options.AddPolicy(AllowMyOrigin, builder =>
                 {
                     builder
-                    .WithOrigins(Configuration["AppSettings:ClientUrl"].ToString())
+                    .WithOrigins("http://localhost:4200")
                     .AllowAnyHeader()
                     .AllowAnyMethod();
                 });
